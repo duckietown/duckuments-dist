@@ -1,1 +1,18 @@
-           mcdp|note_errors_inline.py:39   - <module>       | [32m[32mNo errors found.[0m[0m
+           mcdp|note_errors_inline.py:36   - <module>       | [31m[31mFound a few errors:[0m[0m
+           mcdp|note_errors_inline.py:37   - <module>       | [31m[31m
+
+* Naming
+  
+  More than one element with id 'fig:Stepper_cable'.
+
+* Naming
+  
+  More than one element with id 'fig:Stepper_cable-wrap'.
+
+* Naming
+  
+  More than one element with id 'fig:Stepper_cable'.
+
+* Naming
+  
+  More than one element with id 'fig:Stepper_cable-wrap'.[0m[0m
