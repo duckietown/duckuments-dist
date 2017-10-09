@@ -3764,7 +3764,7 @@ p {
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub" href="#sub:mod-prelim"><span class="toc_what">Section</span> <span class="toc_number">11.1</span><span class="toc_sep"> - </span><span class="toc_name">Preliminaries</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub" href="#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-33"><span class="toc_what">Section</span> <span class="toc_number">11.2</span><span class="toc_sep"> - </span><span class="toc_name">Dynamics</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub" href="#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-5"><span class="toc_what">Section</span> <span class="toc_number">11.2</span><span class="toc_sep"> - </span><span class="toc_name">Dynamics</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub" href="#sub:mod-kinematics"><span class="toc_what">Section</span> <span class="toc_number">11.3</span><span class="toc_sep"> - </span><span class="toc_name">Kinematics</span></a>
@@ -13592,6 +13592,7 @@ that where defined</p>
 <div class="special-par-results-wrap"><p class="special-par-results">k:diff-drive-robot-model</p></div>
 </div>
 <!--Warning: Adding prefix 'sub' to current id 'mod-prelim' for h2.--></section><section class="with-header-inside" id="mod-prelim:section" level="sub" status="unknown"><h2 counter-sec="11" counter-sub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="sub:mod-prelim" label-name="Preliminaries" label-number="11.1" label-self="" label-what="Section" label-what-number="Section 11.1" label-what-number-name="Section 11.1 - Preliminaries" status="unknown">Preliminaries</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/mod-prelim" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
+<div class="todo-wrap"><p class="todo">relabel inertial frame -&gt; local frame; $(\cdot)^I \rightarrow (\cdot)^L$</p></div>
 <p>We first briefly recapitulate on the (reference frames)[#reference-frames] that we will use to model the Duckiebot, with the intent of introducing the notation used throughout this chapter. It is important to note that we restrict the current analysis to the plane, so all of the following in defined in $\reals^2$.</p>
 <p>To describe the behavior of a Duckiebot three reference frames will be used:</p>
 <ul>
@@ -13619,11 +13620,11 @@ that where defined</p>
 <div class="generated-figure-wrap" id="fig:mod-kin-wrap"><figure class="figure generated-figure" counter-fig="1" counter-sec="11" id="fig:mod-kin" label-name="Relevant notations for modeling a differential drive robot" label-number="11.1" label-self="" label-what="Figure" label-what-number="Figure 11.1" label-what-number-name="Figure 11.1 - Relevant notations for modeling a differential drive robot"><div class="figcontent"><div>
 <img src="duckiebook/assets/data-from-img-f7d13bcada5625778d5ccbc47b85b491.png" style="width: 30em; height:auto"/>
 </div><div style="clear: both"></div></div><figcaption counter-fig="1" counter-sec="11" label-name="Relevant notations for modeling a differential drive robot" label-number="11.1" label-self="" label-what="Figure" label-what-number-name="Figure 11.1 - Relevant notations for modeling a differential drive robot">Relevant notations for modeling a differential drive robot</figcaption></figure></div>
-</section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-29:section" level="subsub" status="unknown"><h3 counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="subsub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-29" label-name="Moving between frames" label-number="11.1.1" label-self="1) " label-what="Subsection" label-what-number="Subsection 11.1.1" label-what-number-name="Subsection 11.1.1 - Moving between frames" status="unknown">Moving between frames</h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
+</section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-1:section" level="subsub" status="unknown"><h3 counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="subsub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-1" label-name="Moving between frames" label-number="11.1.1" label-self="1) " label-what="Subsection" label-what-number="Subsection 11.1.1" label-what-number-name="Subsection 11.1.1 - Moving between frames" status="unknown">Moving between frames</h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
 <p>We briefly recapitulate on a few transformations that we will use throughout this chapter.</p>
-<h4 counter-app="0" counter-appsub="0" counter-appsubsub="0" counter-par="1" counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="par:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-30" label-name="Translations" label-number="a" label-self="" label-what="Paragraph" label-what-number="Paragraph a" label-what-number-name="Paragraph a - Translations" status="unknown">Translations</h4><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
+<h4 counter-app="0" counter-appsub="0" counter-appsubsub="0" counter-par="1" counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="par:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-2" label-name="Translations" label-number="a" label-self="" label-what="Paragraph" label-what-number="Paragraph a" label-what-number-name="Paragraph a - Translations" status="unknown">Translations</h4><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
 <p>Let $\avec{x^I} = [x^I, y^I]$ be a vector represented in the inertial frame and $\avec{X^I} = [x^I, y^I, 1]^T$ be its augmented version. It is possible to express such vector in the world frame through a translation:</p>
-<p>\begin{align} \label{eq:mod-translation-i2w}\tag{9}
+<p>\begin{align} \label{eq:mod-translation-i2w}\tag{11}
 \avec{X^W}= \amat{T}\avec{X^R},
 \end{align}</p>
 <p>where the translation matrix $\amat{T}$ is defined as:</p>
@@ -13631,25 +13632,25 @@ that where defined</p>
 \amat{T} = \left[  \begin{array}{ccc} 1 &amp; 0 &amp; x_A  \\ 0 &amp; 1 &amp; y_A \\ 0 &amp; 0 &amp; 1 \end{array} \right] \left[\begin{array}{c} x^I  \\ y^I \\ 1 \end{array} \right].
 \end{align}</p>
 <p>In the Euclidian space, each translation preserves distances (norms), i.e., is an isometry. So, for example, a velocity expressed in the inertial frame will have the same magnitude as that velocity expressed in the world frame.</p>
-<h4 counter-app="0" counter-appsub="0" counter-appsubsub="0" counter-par="2" counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="par:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-31" label-name="Rotations" label-number="b" label-self="" label-what="Paragraph" label-what-number="Paragraph b" label-what-number-name="Paragraph b - Rotations" status="unknown">Rotations</h4><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
+<h4 counter-app="0" counter-appsub="0" counter-appsubsub="0" counter-par="2" counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="par:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-3" label-name="Rotations" label-number="b" label-self="" label-what="Paragraph" label-what-number="Paragraph b" label-what-number-name="Paragraph b - Rotations" status="unknown">Rotations</h4><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
 <p>Let $\avec{x^R} = [x^R, y^R]^T$ be a vector represented in the robot frame and $\avec{X^R} = [x^R, y^R, 1]^T$ its augmented version. It is possible to express such vector in the inertial frame through a rotation:</p>
-<p>\begin{align} \label{eq:mod-rotation-r2i}\tag{10}
+<p>\begin{align} \label{eq:mod-rotation-r2i}\tag{12}
 \avec{X^I}= \amat{R}(\theta)\avec{X^R},
 \end{align}</p>
 <p>where $\amat{R}(\theta) \in SO(2)$ is an orthogonal rotation matrix:</p>
-<p>\begin{align} \label{eq:mod-rot-mat}\tag{11}
+<p>\begin{align} \label{eq:mod-rot-mat}\tag{13}
 \amat{R}(\theta) = \left[  \begin{array}{ccc} \cos\theta &amp; -\sin \theta  &amp; 0 \\ \sin\theta &amp; \cos\theta &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{array} \right].
 \end{align}</p>
 <div class="special-par-note-wrap"><p class="special-par-note">The orthogonality condition implies that $\amat{R}^T(\theta)\amat{R}(\theta) = \amat{R}(\theta)\amat{R}^T(\theta) = \amat{I}$, hence:
 $$ \label{eq:mod-orthogonality-cond}\tag{1}
 \amat{R}^T(\theta) = \amat{R}^{-1}(\theta),
 $$ which is quite nice.</p></div>
-<h4 counter-app="0" counter-appsub="0" counter-appsubsub="0" counter-par="3" counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="par:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-32" label-name="Roto-translation" label-number="c" label-self="" label-what="Paragraph" label-what-number="Paragraph c" label-what-number-name="Paragraph c - Roto-translation" status="unknown">Roto-translation</h4><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
+<h4 counter-app="0" counter-appsub="0" counter-appsubsub="0" counter-par="3" counter-sec="11" counter-sub="1" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="par:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-4" label-name="Roto-translation" label-number="c" label-self="" label-what="Paragraph" label-what-number="Paragraph c" label-what-number-name="Paragraph c - Roto-translation" status="unknown">Roto-translation</h4><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
 <p>A corollary of \eqref{eq:mod-translation-i2w} and \eqref{eq:mod-rotation-r2i} is that the translations and rotations can be combined in a single transformation, because $\avec{X^W} = \amat{T}\avec{X^I} = \amat{T} \amat{R}(\theta)\avec{X^R}$. The combined transformation matrix is given by:</p>
-<p>\begin{align} \label{eq:mod-rototranslation-mat}\tag{12}
-\amat{T} \amat{R}(\theta) = \left[  \begin{array}{ccc} \cos\theta &amp; -\sin \theta  &amp; x_A \\ \\sin\theta &amp; \cos\theta &amp; y_A \\ 0 &amp; 0 &amp; 1 \end{array} \right].
+<p>\begin{align} \label{eq:mod-rototranslation-mat}\tag{14}
+\amat{T} \amat{R}(\theta) = \left[  \begin{array}{ccc} \cos\theta &amp; -\sin \theta  &amp; x_A \\sin\theta &amp; \cos\theta &amp; y_A \\ 0 &amp; 0 &amp; 1 \end{array} \right].
 \end{align}</p>
-</section></section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-33:section" level="sub" status="unknown"><h2 counter-sec="11" counter-sub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-33" label-name="Dynamics" label-number="11.2" label-self="" label-what="Section" label-what-number="Section 11.2" label-what-number-name="Section 11.2 - Dynamics" status="unknown">Dynamics</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span><section class="without-header-inside" level="subsub">
+</section></section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-5:section" level="sub" status="unknown"><h2 counter-sec="11" counter-sub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-5" label-name="Dynamics" label-number="11.2" label-self="" label-what="Section" label-what-number="Section 11.2" label-what-number-name="Section 11.2 - Dynamics" status="unknown">Dynamics</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span><section class="without-header-inside" level="subsub">
 <p>While kinematics studies the properties of motions of geometric (i.e., massless) points, dynamical modeling takes into account the actual material distribution of the system. Once mass comes into play, motion is the result of the equilibrium of external forces and torques with inertial reactions. While different approaches can be used to derive these equations, namely the Lagrangian or Newtonian approaches (former based on energy considerations, latter on equilibrium of generalized forces), we choose to follow the Newtonian one here for it grants, arguably, a more explicit physical intuition of the problem. Obviously both methods lead to the same results when the same hypothesis are made.</p>
 <!--Warning: Adding prefix 'subsub' to current id 'mod-dyn-notations' for h3.--></section><section class="with-header-inside" id="mod-dyn-notations:section" level="subsub" status="unknown"><h3 counter-sec="11" counter-sub="2" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="subsub:mod-dyn-notations" label-name="Notations" label-number="11.2.1" label-self="1) " label-what="Subsection" label-what-number="Subsection 11.2.1" label-what-number-name="Subsection 11.2.1 - Notations" status="unknown">Notations</h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/mod-dyn-notations" title="Use this link as the permanent link to share with people.">🔗</a></span>
 <p>For starters, recalling that $C^r = (c, 0)$ is the center of mass of the robot, we define the relevant notations:</p>
@@ -13693,28 +13694,28 @@ $$ which is quite nice.</p></div>
 </div>
 <p><a href="#fig:mod-dyn"><span class="reflabel">Figure 11.2</span></a> summarizes these notations.</p>
 <p>Before deriving the dynamic model of the robot, it is useful to recall some elements of polar coordinates kinematics.</p>
-</section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-34:section" level="subsub" status="unknown"><h3 counter-sec="11" counter-sub="2" counter-subsub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="subsub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-a4006-34" label-name="Polar coordinates kinematics" label-number="11.2.2" label-self="2) " label-what="Subsection" label-what-number="Subsection 11.2.2" label-what-number-name="Subsection 11.2.2 - Polar coordinates kinematics" status="unknown">Polar coordinates kinematics</h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
+</section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-6:section" level="subsub" status="unknown"><h3 counter-sec="11" counter-sub="2" counter-subsub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="subsub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-b0411-6" label-name="Polar coordinates kinematics" label-number="11.2.2" label-self="2) " label-what="Subsection" label-what-number="Subsection 11.2.2" label-what-number-name="Subsection 11.2.2 - Polar coordinates kinematics" status="unknown">Polar coordinates kinematics</h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a></span>
 <p>Let $\avec{r}(t)$ identify a point in the space from the inertial frame at distance $r(t)$ from the $A$.</p>
 <div class="special-par-warning-wrap"><p class="special-par-warning"> You might want to refresh <a href="https://en.wikipedia.org/wiki/Euler%27s_formula">Euler formula</a> to convince yourself about the following.</p></div>
-<p>\begin{align} \label{eq:mod-polar-kin-deriv}\tag{13}
+<p>\begin{align} \label{eq:mod-polar-kin-deriv}\tag{15}
 \avec{r}(t) &amp;= r(t) e^{j\theta(t)} \\
 \avec{\dot r}(t) &amp;= v_u(t) e^{j\theta(t)} + v_w(t) e^{j(\theta(t)+\frac{\pi}{2})} \\
 \avec{\ddot r}(t) &amp;= a_u(t) e^{j\theta(t)} + a_w(t) e^{j(\theta(t)+\frac{\pi}{2})},
 \end{align}</p>
 <p>with:</p>
-<p>\begin{align} \label{eq:mod-polar-kin-coeff}\tag{14}
+<p>\begin{align} \label{eq:mod-polar-kin-coeff}\tag{16}
 v_u(t) &amp;= \dot r(t)\\
 v_w(t) &amp;= r (t) \dot \theta (t)\\
 a_u(t) &amp;= \dot v_u - v_w \dot \theta (t) = \ddot r(t) - r \dot \theta^2(t)\\
 a_w(t) &amp;= \dot v_w + v_u \dot \theta (t) = 2 \dot r (t) \dot \theta (t) + r(t) \ddot \theta (t).
 \end{align}</p>
 <p>Keeping \eqref{eq:mod-polar-kin-deriv} and \eqref{eq:mod-polar-kin-coeff} in mind, it is useful to note (for later use) that, letting $\avec{r}(t)$ identify the position of the center of mass $C$ in the inertial frame:</p>
-<p>\begin{align} \label{eq:mod-C-world-pos}\tag{15}
+<p>\begin{align} \label{eq:mod-C-world-pos}\tag{17}
 \left\{  \begin{array}{ll} x_C^W(t) &amp;= x_A(t) + r(t) \cos\theta(t) \\
                           y_C^W(t) &amp;= y_A(t) + r(t) \sin\theta(t)   \end{array} \right.,
 \end{align}</p>
 <p>and therefore:</p>
-<p>\begin{align} \label{eq:mod-A-dot-polar}\tag{16}
+<p>\begin{align} \label{eq:mod-A-dot-polar}\tag{18}
 \left\{  \begin{array}{ll} \dot x^I_A(t) &amp;= x^W_C(t) - v_u(t) \cos\theta(t) + v_w(t) \sin\theta(t)\\
                           \dot y^I_A(t) &amp;= y^W_C(t) - v_u(t) \sin\theta(t) - v_w(t) \cos\theta(t)   \end{array} \right..
 \end{align}</p>
@@ -13725,31 +13726,32 @@ a_w(t) &amp;= \dot v_w + v_u \dot \theta (t) = 2 \dot r (t) \dot \theta (t) + r(
 </div><div style="clear: both"></div></div><figcaption counter-fig="2" counter-sec="11" label-name="Free body diagram of a differential drive robot" label-number="11.2" label-self="" label-what="Figure" label-what-number-name="Figure 11.2 - Free body diagram of a differential drive robot">Free body diagram of a differential drive robot</figcaption></figure></div>
 <!--Warning: Adding prefix 'subsub' to current id 'mod-dyn-eq' for h3.--></section><section class="with-header-inside" id="mod-dyn-eq:section" level="subsub" status="unknown"><h3 counter-sec="11" counter-sub="2" counter-subsub="4" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="subsub:mod-dyn-eq" label-name="Equilibrium of forces and moments" label-number="11.2.4" label-self="4) " label-what="Subsection" label-what-number="Subsection 11.2.4" label-what-number-name="Subsection 11.2.4 - Equilibrium of forces and moments" status="unknown">Equilibrium of forces and moments</h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/mod-dyn-eq" title="Use this link as the permanent link to share with people.">🔗</a></span>
 <p>We derive the dynamic model by imposing the simultaneous equilibrium of forces along the longitudinal and lateral directions in the robot frame with the respective inertial forces, and of the moments around the vertical axis (coming out of the.. screen) passing through the center of mass of the robotic vehicle.</p>
-<p>\begin{align} \label{eq:mod-dyn-equilibria}\tag{17}
+<p>\begin{align} \label{eq:mod-dyn-equilibria}\tag{19}
 Ma_u(t) &amp;= F_{u_L}+F_{u_R} \\
 Ma_w(t) &amp;= F_{w_L}+F_{w_R} \\
 \ddot{\theta}(t) &amp;= \frac{L}{J}(F_{u_R}-F_{u_L}) + \frac{c}{J}(F_{w_R}+F_{w_L}).
 \end{align}</p>
 <p>By substituting the \eqref{eq:mod-polar-kin-coeff} in \eqref{eq:mod-dyn-equilibria}, the equilibrium equations are expressed in terms of accelerations of the center of mass in the robot frame:</p>
 <p>\begin{align}
-\dot{v}_u(t) &amp;= v_w(t) \dot{\theta}(t) + \frac{F_{u_L}+F_{u_R}}{M} \label{eq:mod-dyn-equilibria2a}\tag{18} \\
-\dot{v}_w(t) &amp;= -v_u(t) \dot{\theta}(t)+\frac{F_{w_L}+F_{w_R}}{M}  \label{eq:mod-dyn-equilibria2b}\tag{19} \\
-\ddot{\theta}(t) &amp;= \frac{L}{J}(F_{u_R}-F_{u_L}) - \frac{c}{J}(F_{w_R}+F_{w_L}). \label{eq:mod-dyn-equilibria2c}\tag{20}
+\dot{v}_u(t) &amp;= v_w(t) \dot{\theta}(t) + \frac{F_{u_L}+F_{u_R}}{M} \label{eq:mod-dyn-equilibria2a}\tag{20} \\
+\dot{v}_w(t) &amp;= -v_u(t) \dot{\theta}(t)+\frac{F_{w_L}+F_{w_R}}{M}  \label{eq:mod-dyn-equilibria2b}\tag{21} \\
+\ddot{\theta}(t) &amp;= \frac{L}{J}(F_{u_R}-F_{u_L}) - \frac{c}{J}(F_{w_R}+F_{w_L}). \label{eq:mod-dyn-equilibria2c}\tag{22}
 \end{align}</p>
 <p>This is a general dynamic model (in the sense of no kinematic constraints) of a differential drive robot under the geometric assumptions listed above. It is noted that it is a coupled and nonlinear model, not exactly a best case scenario (we like linear things, because there are plenty of tools to handle them). When using the general dynamic model above, it makes sense to associate the general kinematic model as well, given by:</p>
-<p>\begin{align} \label{eq:mod-gen-kin-mod}\tag{21}
+<p>\begin{align} \label{eq:mod-gen-kin-mod}\tag{23}
 \dot{x}_A(t) &amp;= v_u(t) \cos\theta(t) - (v_w(t)-c \dot \theta)\sin\theta(t) \\
-\dot{x}_A(t) &amp;= v_u(t) \sin\theta(t) + (v_w(t)-c \dot \theta)\sin\theta(t).
+\dot{y}_A(t) &amp;= v_u(t) \sin\theta(t) + (v_w(t)-c \dot \theta)\sin\theta(t).
 \end{align}</p>
 <p>the above \eqref{eq:mod-gen-kin-mod} can be obtained by recalling on one side that translations are isometric transformations, and on the other side that:</p>
-<p>\begin{align} \label{eq:mod-xCW}\tag{22}
+<p>\begin{align} \label{eq:mod-xCW}\tag{24}
 \left\{  \begin{array}{ll} x_A(t) &amp;= x^W_C(t) - c \cos\theta(t) \\
                            y_A(t) &amp;= y^W_C(t) - c \sin\theta(t) \end{array} \right.
 \end{align}</p>
-<p>\begin{align} \label{eq:mod-xCI}\tag{23}
+<p>\begin{align} \label{eq:mod-xCI}\tag{25}
 \left\{  \begin{array}{ll} x_C^I(t) &amp;=  v_u(t) \cos\theta(t) - v_w(t) \sin\theta(t) \\
                            y_C^I(t) &amp;= v_u(t) \sin\theta(t) + v_w(t) \cos\theta(t) \end{array} \right.
 \end{align}</p>
+<div class="special-par-note-wrap"><p class="special-par-note">Equation \eqref{eq:mod-gen-kin-mod} can be rewritten as: $$ \label{eq:mod-gen-kin-mod-better}\tag{2} \avec{v_A^I} = \amat{R}(\theta) \avec{v_A^R} $$, where: $$ \label{eq:mod-v_A^R}\tag{3} \avec{v_A^R} = [v_u(t), v_w(t) - c\dot\theta(t)]^T. $$</p></div>
 <p>In order to simplify the model, we proceed to impose some kinematic constraints.</p>
 <!--Warning: Adding prefix 'sub' to current id 'mod-kinematics' for h2.--></section></section><section class="with-header-inside" id="mod-kinematics:section" level="sub" status="unknown"><h2 counter-sec="11" counter-sub="3" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="sub:mod-kinematics" label-name="Kinematics" label-number="11.3" label-self="" label-what="Section" label-what-number="Section 11.3" label-what-number-name="Section 11.3 - Kinematics" status="unknown">Kinematics</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/mod-kinematics" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
 <p>In this section we derive the kinematic model of a differential drive mobile platform under the assumptions of (a) no lateral slipping and (b) pure rolling of the wheels. We refer to these two assumptions as kinematic constraints.</p>
@@ -13757,53 +13759,54 @@ Ma_w(t) &amp;= F_{w_L}+F_{w_R} \\
 <p>The kinematic constraints are derived from two assumptions:</p>
 <ul>
 <li><em>No lateral slipping motion</em>: the robot cannot move sideways, but only in the direction of motion, i.e., its lateral velocity in the robot frame is zero:
-$$ \label{eq:mod-no-lat-slip-constraint-r}\tag{2}
+$$ \label{eq:mod-no-lat-slip-constraint-r}\tag{4}
  \dot y_A^r = 0.
 $$</li>
 </ul>
 <p>By inverting \eqref{eq:mod-rotation-r2i}, this constraint can be expressed through the inertial frame variables, yielding:</p>
-<p>$$ \label{eq:mod-no-lat-slip-constraint-i}\tag{3}
+<p>$$ \label{eq:mod-no-lat-slip-constraint-i}\tag{5}
 \dot y_A(t) \cos \theta(t) -\dot x_A(t) \sin \theta(t) = 0.
 $$</p>
 <p>Imposing \eqref{eq:mod-no-lat-slip-constraint-i} on \eqref{eq:mod-A-dot-polar} results in:</p>
-<p>$$ \label{eq:mod-no-lat-slip-constraint-v_w}\tag{4}
+<p>$$ \label{eq:mod-no-lat-slip-constraint-v_w}\tag{6}
 v_w(t) = \dot y_C^I(t) \cos\theta(t) - \dot x_C^I(t) \sin\theta(t),
 $$</p>
 <p>and by recalling that $C^R = (c,0)$:</p>
-<p>$$ \label{eq:mod-no-lat-slip-constraint-C}\tag{5}
+<p>$$ \label{eq:mod-no-lat-slip-constraint-C}\tag{7}
 \dot y_C^I(t) \cos\theta(t) - \dot x_C^I(t) \sin\theta(t) = c\dot\theta(t).
 $$</p>
 <p>Hence, we obtain the strongest expression of this constraint:</p>
-<p>$$ \label{eq:mod-no-lat-slip-final}\tag{6}
+<p>$$ \label{eq:mod-no-lat-slip-final}\tag{8}
 v_w(t) = c\dot\theta(t),
 $$</p>
 <p>and therefore:</p>
-<p>$$ \label{eq:mod-no-lat-slip-final-dot}\tag{7}
+<p>$$ \label{eq:mod-no-lat-slip-final-dot}\tag{9}
 \dot v_w(t) = c\ddot\theta(t).
 $$</p>
+<div class="special-par-note-wrap"><p class="special-par-note">a simpler way of deriving \eqref{eq:mod-no-lat-slip-final-dot} is noticing, from \eqref{eq:mod-v_A^R}, that $\dot y_A^R = v_w(t) - c\dot\theta(t)$. </p></div>
 <ul>
 <li><em>Pure rolling</em>: the wheels never slips or skids (<a href="#fig:mod-pure-rolling"><span class="reflabel">Figure 11.3</span></a>). Recalling that $R$ is the radius of the wheels (identical) and letting $\dot \varphi_{l}, \dot \varphi_{r}$ be the angular velocities of the left and right wheels respectively, the velocity of the ground contact point P in the robot frame is given by:</li>
 </ul>
 <div class="generated-figure-wrap" id="fig:mod-pure-rolling-wrap"><figure class="figure generated-figure" counter-fig="3" counter-sec="11" id="fig:mod-pure-rolling" label-name="Pure rolling kinematic constraint" label-number="11.3" label-self="" label-what="Figure" label-what-number="Figure 11.3" label-what-number-name="Figure 11.3 - Pure rolling kinematic constraint"><div class="figcontent"><div>
 <img src="duckiebook/assets/data-from-img-f5d53a8f51113ca33ca393aaf710ba59.png" style="width: 15em; height:auto"/>
 </div><div style="clear: both"></div></div><figcaption counter-fig="3" counter-sec="11" label-name="Pure rolling kinematic constraint" label-number="11.3" label-self="" label-what="Figure" label-what-number-name="Figure 11.3 - Pure rolling kinematic constraint">Pure rolling kinematic constraint</figcaption></figure></div>
-<p>\begin{align} \label{eq:mod-pure-rolling}\tag{24}
+<p>\begin{align} \label{eq:mod-pure-rolling}\tag{26}
 \left\{  \begin{array}{ll} v_{P,r} &amp;= R \dot \varphi_{r} \\
                       v_{P,l} &amp;= R \dot \varphi_{l}  \end{array} \right..
 \end{align}</p>
 <p>Another notable consequence of this assumption is that, always in the robot frame, the full power of the motor can be translated into a propelling force for the vehicle in the longitudinal direction. Or, more simply, it allows to write:</p>
-<p>$$ \label{eq:mod-force-and-torque}\tag{8}
+<p>$$ \label{eq:mod-force-and-torque}\tag{10}
 F_{u, (\cdot)}(t)R = \tau_{(\cdot)}(t),
 $$</p>
 <p>where $\tau_{(\cdot)}(t)$ is the torque exerted by each motor on its wheel $(\cdot) = {l,r}$.</p>
 <!--Warning: Adding prefix 'sub' to current id 'mod-kin' for h2.--></section></section><section class="with-header-inside" id="mod-kin:section" level="sub" status="unknown"><h2 counter-sec="11" counter-sub="4" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="sub:mod-kin" label-name="Differential drive robot kinematic model" label-number="11.4" label-self="" label-what="Section" label-what-number="Section 11.4" label-what-number-name="Section 11.4 - Differential drive robot kinematic model" status="unknown">Differential drive robot kinematic model</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/mod-kin" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
 <p>In a differential drive robot, controlling the wheels at different speeds generates a rolling motion of rate $\omega = \dot \theta$.  In a rotating field there always is a fixed point, the <em>center of instantaneous curvature</em> (ICC), and all points at distance $d$ from it will have a velocity given by $\omega d$, and direction orthogonal to that of the line connecting the ICC and the wheels (i.e., the <em>axle</em>). Therefore, by looking at <a href="#fig:mod-kin"><span class="reflabel">Figure 11.1</span></a>, we can write:</p>
-<p>\begin{align} \label{eq:mod-kin-1}\tag{25}
+<p>\begin{align} \label{eq:mod-kin-1}\tag{27}
 \left\{  \begin{array}{l} \dot \theta (d-L) &amp;= v_l  \\
                           \dot \theta (d+L)  &amp;= v_r \end{array} \right.,
 \end{align}</p>
 <p>from which:</p>
-<p>\begin{align} \label{eq:mod-kin-2}\tag{26}
+<p>\begin{align} \label{eq:mod-kin-2}\tag{28}
 \left\{  \begin{array}{l} d &amp;= L \frac{v_r + v_l}{v_r - v_l}  \\
                           \dot \theta &amp;= \frac{v_r - v_l}{2L} \end{array} \right..
 \end{align}</p>
@@ -13815,13 +13818,13 @@ $$</p>
 </ul>
 <div class="special-par-note-wrap"><p class="special-par-note">Moreover, a differential drive robot cannot move in the direction of the ICC, it is a singularity.</p></div>
 <p>By recalling the <em>no lateral slipping motion</em> \eqref{eq:mod-no-lat-slip-constraint-r} hypothesis and the <em>pure rolling</em> constraint \eqref{eq:mod-pure-rolling}, and noticing that the translational velocity of $A$ in the robot frame is $v_A = \dot \theta d = (v_r+v_l)/2$ we can write:</p>
-<p>\begin{align} \label{eq:mod-kin-3}\tag{27}
+<p>\begin{align} \label{eq:mod-kin-3}\tag{29}
 \left\{  \begin{array}{l} \dot x_A^R &amp;= R (\dot \varphi_R +\dot \varphi_L)/2  \\
                           \dot y_A^R &amp;= 0 \\
                           \dot \theta &amp;= \omega = R(\dot \varphi_R - \dot \varphi_L)/(2L) \end{array} \right.,
 \end{align}  </p>
 <p>which in more compact yields the <em>simplified forward kinematics</em> in the robot frame:</p>
-<p>\begin{align} \label{eq:mod-forward-kinematics-robot-frame}\tag{28}
+<p>\begin{align} \label{eq:mod-forward-kinematics-robot-frame}\tag{30}
   \left[ \begin{array}{c} \dot x_A^R \\ \dot y_A^R \\ \dot \theta \end{array} \right] = \left[ \begin{array}{cc} \frac{R}{2}  &amp; \frac{R}{2}  \\
                             0 &amp; 0   \\
                             \frac{R}{2L} &amp; -\frac{R}{2L}   \\  \end{array}  \right]  
@@ -13829,7 +13832,7 @@ $$</p>
 \end{align}</p>
 <p>Finally, by using \eqref{eq:mod-rot-mat}, we can recast \eqref{eq:mod-forward-kinematics-robot-frame} in the inertial frame.</p>
 <div class="special-par-note-wrap"><p class="special-par-note">The <em>simplified forward kinematics</em> model of a differential drive vehicle is given by:
-\begin{align} \label{eq:mod-forward-kinematics-inertial-frame}\tag{29}
+\begin{align} \label{eq:mod-forward-kinematics-inertial-frame}\tag{31}
 \displaystyle \avec{\dot q}^I = \amat{R}(\theta)  \left[ \begin{array}{c} \dot x_A^r \\ \dot y_A^r \\ \dot \theta \end{array} \right] = \left[ \begin{array}{cc} \frac{R}{2} \cos \theta &amp; \frac{R}{2} \cos \theta \\
 \frac{R}{2} \sin \theta &amp; \frac{R}{2} \sin \theta   \\
   \frac{R}{2L} &amp; -\frac{R}{2L}   \\  \end{array}  \right]  
@@ -13840,13 +13843,11 @@ $$</p>
 \end{align}</p></div>
 <!--Warning: Adding prefix 'sub' to current id 'mod-dyn-simpler' for h2.--></section></section><section class="with-header-inside" id="mod-dyn-simpler:section" level="sub" status="unknown"><h2 counter-sec="11" counter-sub="5" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="sub:mod-dyn-simpler" label-name="Simplified dynamic model" label-number="11.5" label-self="" label-what="Section" label-what-number="Section 11.5" label-what-number-name="Section 11.5 - Simplified dynamic model" status="unknown">Simplified dynamic model</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/mod-dyn-simpler" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
 <p>By implementing the kinematic constraints formulations derived above, i.e., the no lateral slipping (\eqref{eq:mod-no-lat-slip-final-dot}) and pure rolling (\eqref{eq:mod-force-and-torque}) in the general dynamic model, it is straightforward to obtain:</p>
-<p>\begin{align} \label{eq:mod-dyn-model-a}\tag{30}
+<p>\begin{align} \label{eq:mod-dyn-model-a}\tag{32}
 \dot{v}_u (t) &amp;= c \dot \theta^2(t) + \frac{1}{RM} (\tau_R(t)+\tau_L(t)) \\
 \dot v_w(t) &amp;= c \dot\theta(t) \\
 \ddot \theta &amp;= - \frac{Mc}{Mc^2+J} \dot\theta(t)v_u(t) + \frac{L}{R(Mc^2+J)}(\tau_R(t)-\tau_L(t))
 \end{align}</p>
-<p>This model now describes the input output relationship between torques and robot angular rate and velocities in the vehicle frame.</p>
-<p>But there is still a missing link, as the actual control input to the robot is not the torque, but the voltage applied to the DC motors. It is hence necessary to model the actuator dynamics.</p>
 <!--Warning: Adding prefix 'sub' to current id 'mod-motor' for h2.--></section></section><section class="with-header-inside" id="mod-motor:section" level="sub" status="unknown"><h2 counter-sec="11" counter-sub="6" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" id="sub:mod-motor" label-name="DC motor dynamic model" label-number="11.6" label-self="" label-what="Section" label-what-number="Section 11.6" label-what-number-name="Section 11.6 - DC motor dynamic model" status="unknown">DC motor dynamic model</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_30_learning_materials/40_duckiebot_modeling/10_basic_car_modeling-kin-and-dyn.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/mod-motor" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
 <p>The equations governing the behavior of a DC motor are driven by an input <em>armature voltage</em> $V(t)$:</p>
 <p>\begin{align}
@@ -20567,6 +20568,7 @@ sudo apt-get install -y ffmpeg gstreamer0.10-ffmpeg
 <li>Sat, Oct 07: <a class="number_name" href="#sec:exercise-augmented-reality"><span class="reflabel">Unit H-9 - Exercise: Augmented Reality</span></a> (Jon Michaux)</li>
 <li>Sat, Oct 07: <a class="number_name" href="#sec:exercise-bag-mirror"><span class="reflabel">Unit H-7 - Exercise: Bag instagram</span></a> (Andrea F Daniele)</li>
 <li>Sat, Oct 07: <a class="number_name" href="#sec:sdcards"><span class="reflabel">Unit I-17 - SD Cards tools</span></a> (newmanlucy)</li>
+<li>Sat, Oct 07: <a class="number_name" href="#sec:duckiebot-modeling"><span class="reflabel">Unit G-11 - Duckiebot modeling</span></a> (Jacopo Tani)</li>
 <li>Sat, Oct 07: <a class="number_name" href="#sec:byobu"><span class="reflabel">Unit I-26 - Byobu</span></a> (Simon Muntwiler)</li>
 <li>Sat, Oct 07: <a class="number_name" href="#sec:setup-laptop"><span class="reflabel">Unit C-8 - Installing Ubuntu on laptops</span></a> (newmanlucy)</li>
 <li>Sat, Oct 07: <a class="number_name" href="#sec:exercise-instagram-live"><span class="reflabel">Unit H-8 - Exercise: Live Instagram</span></a> (breandan)</li>
@@ -20581,7 +20583,6 @@ sudo apt-get install -y ffmpeg gstreamer0.10-ffmpeg
 <li>Tue, Oct 03: <a class="number_name" href="#sec:power-cable-prep-c0"><span class="reflabel">Unit C-4 - Preparing the power cable for <code>DB17</code></span></a> (Andrea F. Daniele)</li>
 <li>Tue, Oct 03: <a class="number_name" href="#sec:assembling-duckiebot-db17-ttic"><span class="reflabel">Unit C-6 - Assembling the Duckiebot <code>DB17-wjd</code> (TTIC)</span></a> (Andrea F. Daniele)</li>
 <li>Tue, Oct 03: <a class="number_name" href="#sec:rc-control"><span class="reflabel">Unit C-11 - Software setup and RC remote control</span></a> (lapandic)</li>
-<li>Tue, Oct 03: <a class="number_name" href="#sec:duckiebot-modeling"><span class="reflabel">Unit G-11 - Duckiebot modeling</span></a> (Jacopo Tani)</li>
 <li>Tue, Oct 03: <a class="number_name" href="#sec:slack_channels"><span class="reflabel">Unit L-9 - Slack Channels</span></a> (Matthew Walter)</li>
 <li>Tue, Oct 03: <a class="number_name" href="#sec:duckiebot-configurations"><span class="reflabel">Unit C-1 - Duckiebot configurations</span></a> (Jacopo Tani)</li>
 <li>Tue, Oct 03: <a class="number_name" href="#sec:ETH-journal"><span class="reflabel">Unit L-10 - Zürich branch diary</span></a> (lapandic)</li>
