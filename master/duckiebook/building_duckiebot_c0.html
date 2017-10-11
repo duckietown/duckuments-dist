@@ -1252,6 +1252,40 @@ code.rvalue span.RcompUnit {
 .CatalogueRes span.RcompUnit {
   color: darkred !important;
 }
+.only-zurich,
+.only-montreal,
+.only-chicago,
+.only-taiwan {
+  margin-left: 40px !important;
+  border-left: dashed 1px red;
+  padding-left: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.only-zurich::before,
+.only-montreal::before,
+.only-chicago::before,
+.only-taiwan::before {
+  display: block;
+  float: left;
+  margin-top: -2px;
+  margin-left: -30px;
+  margin-bottom: -10px;
+  margin-right: 10px;
+  background-size: cover;
+}
+.only-zurich::before {
+  content: "🇨🇭";
+}
+.only-montreal::before {
+  content: "🇨🇦";
+}
+.only-chicago::before {
+  content: "🇺🇸";
+}
+.only-taiwan::before {
+  content: "🇹🇼";
+}
 li p {
   display: inline;
 }
@@ -2967,7 +3001,7 @@ p {
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:clone-software-repo"><span class="toc_what">Section</span> <span class="toc_number">11.1</span><span class="toc_sep"> - </span><span class="toc_name">Clone the Duckietown repository</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-dcaf1-105"><span class="toc_what">Section</span> <span class="toc_number">11.2</span><span class="toc_sep"> - </span><span class="toc_name">Update the system</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-6ae63-2"><span class="toc_what">Section</span> <span class="toc_number">11.2</span><span class="toc_sep"> - </span><span class="toc_name">Update the system</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:build-repo"><span class="toc_what">Section</span> <span class="toc_number">11.3</span><span class="toc_sep"> - </span><span class="toc_name">Set up the ROS environment on the Duckiebot</span></a>
@@ -2982,10 +3016,10 @@ p {
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:test-joystick"><span class="toc_what">Section</span> <span class="toc_number">11.6</span><span class="toc_sep"> - </span><span class="toc_name">Test that the joystick is detected</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-dcaf1-106"><span class="toc_what">Section</span> <span class="toc_number">11.7</span><span class="toc_sep"> - </span><span class="toc_name">Run the joystick demo</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-6ae63-3"><span class="toc_what">Section</span> <span class="toc_number">11.7</span><span class="toc_sep"> - </span><span class="toc_name">Run the joystick demo</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-dcaf1-108"><span class="toc_what">Section</span> <span class="toc_number">11.8</span><span class="toc_sep"> - </span><span class="toc_name">The proper shutdown procedure for the Raspberry Pi</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_control.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-6ae63-5"><span class="toc_what">Section</span> <span class="toc_number">11.8</span><span class="toc_sep"> - </span><span class="toc_name">The proper shutdown procedure for the Raspberry Pi</span></a>
 </li>
 </ul>
 </li>
@@ -3008,22 +3042,22 @@ p {
 <li class="toc_li-depth-1 toc_li_for_part link-same-file-inside">
 <a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="rc_launched_remotely.html#sec:rc-launched-remotely"><span class="toc_what">Unit</span> <span class="toc_number">C-13</span><span class="toc_sep"> - </span><span class="toc_name">RC control launched remotely</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-89090-111"><span class="toc_what">Section</span> <span class="toc_number">13.1</span><span class="toc_sep"> - </span><span class="toc_name">Two ways to launch a program</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-584bc-1"><span class="toc_what">Section</span> <span class="toc_number">13.1</span><span class="toc_sep"> - </span><span class="toc_name">Two ways to launch a program</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-89090-112"><span class="toc_what">Section</span> <span class="toc_number">13.2</span><span class="toc_sep"> - </span><span class="toc_name">Download and setup <code>Software</code> repository on the laptop</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-584bc-2"><span class="toc_what">Section</span> <span class="toc_number">13.2</span><span class="toc_sep"> - </span><span class="toc_name">Download and setup <code>Software</code> repository on the laptop</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-89090-113"><span class="toc_what">Section</span> <span class="toc_number">13.3</span><span class="toc_sep"> - </span><span class="toc_name">Edit the <code>machines</code> files on your laptop</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:create-robot-config"><span class="toc_what">Section</span> <span class="toc_number">13.3</span><span class="toc_sep"> - </span><span class="toc_name">Rebuild the machines files</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:roslaunch-joystick"><span class="toc_what">Section</span> <span class="toc_number">13.4</span><span class="toc_sep"> - </span><span class="toc_name">Start the demo</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-89090-114"><span class="toc_what">Section</span> <span class="toc_number">13.5</span><span class="toc_sep"> - </span><span class="toc_name">Watch the program output using <code>rqt_console</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-584bc-3"><span class="toc_what">Section</span> <span class="toc_number">13.5</span><span class="toc_sep"> - </span><span class="toc_name">Watch the program output using <code>rqt_console</code></span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-89090-115"><span class="toc_what">Section</span> <span class="toc_number">13.6</span><span class="toc_sep"> - </span><span class="toc_name">Troubleshooting</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="rc_launched_remotely.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-584bc-4"><span class="toc_what">Section</span> <span class="toc_number">13.6</span><span class="toc_sep"> - </span><span class="toc_name">Troubleshooting</span></a>
 </li>
 </ul>
 </li>
@@ -4207,10 +4241,10 @@ p {
 <li class="toc_li-depth-1 toc_li_for_part">
 <a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="apt.html#sec:apt"><span class="toc_what">Unit</span> <span class="toc_number">I-1</span><span class="toc_sep"> - </span><span class="toc_name">Ubuntu packaging with APT</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="apt.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-113"><span class="toc_what">Section</span> <span class="toc_number">1.1</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt install</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="apt.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-1"><span class="toc_what">Section</span> <span class="toc_number">1.1</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt install</code></span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="apt.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-114"><span class="toc_what">Section</span> <span class="toc_number">1.2</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt update</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="apt.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-2"><span class="toc_what">Section</span> <span class="toc_number">1.2</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt update</code></span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="apt.html#sub:apt-key"><span class="toc_what">Section</span> <span class="toc_number">1.3</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt-key</code></span></a>
@@ -5042,13 +5076,16 @@ p {
 <li class="toc_li-depth-1 toc_li_for_part">
 <a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="fall2017_git.html#sec:fall2017-git"><span class="toc_what">Unit</span> <span class="toc_number">L-6</span><span class="toc_sep"> - </span><span class="toc_name">Git usage guide for Fall 2017</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-7f172-72"><span class="toc_what">Section</span> <span class="toc_number">6.1</span><span class="toc_sep"> - </span><span class="toc_name">Repositories</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-132e4-1"><span class="toc_what">Section</span> <span class="toc_number">6.1</span><span class="toc_sep"> - </span><span class="toc_name">Differences</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-homeworks"><span class="toc_what">Section</span> <span class="toc_number">6.2</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for  homeworks</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:fall2017-git-repository"><span class="toc_what">Section</span> <span class="toc_number">6.2</span><span class="toc_sep"> - </span><span class="toc_name">Repositories</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-projects"><span class="toc_what">Section</span> <span class="toc_number">6.3</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for project development</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-homeworks"><span class="toc_what">Section</span> <span class="toc_number">6.3</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for  homeworks</span></a>
+</li>
+<li class="toc_li-depth-3 toc_li_for_sec">
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-projects"><span class="toc_what">Section</span> <span class="toc_number">6.4</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for project development</span></a>
 </li>
 </ul>
 </li>
