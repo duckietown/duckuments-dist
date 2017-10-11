@@ -1252,6 +1252,35 @@ code.rvalue span.RcompUnit {
 .CatalogueRes span.RcompUnit {
   color: darkred !important;
 }
+.only-zurich,
+.only-montreal,
+.only-chicago {
+  margin-left: 40px !important;
+  border-left: dashed 1px red;
+  padding-left: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.only-zurich::before,
+.only-montreal::before,
+.only-chicago::before {
+  display: block;
+  float: left;
+  margin-top: -2px;
+  margin-left: -30px;
+  margin-bottom: -10px;
+  margin-right: 10px;
+  background-size: cover;
+}
+.only-zurich::before {
+  content: "🇨🇭";
+}
+.only-montreal::before {
+  content: "🇨🇦";
+}
+.only-chicago::before {
+  content: "🇺🇸";
+}
 li p {
   display: inline;
 }
@@ -4207,10 +4236,10 @@ p {
 <li class="toc_li-depth-1 toc_li_for_part link-same-file-direct-parent contains-link-same-file">
 <a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-same-file" href="#sec:apt"><span class="toc_what">Unit</span> <span class="toc_number">I-1</span><span class="toc_sep"> - </span><span class="toc_name">Ubuntu packaging with APT</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec contains-link-same-file">
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside link-same-file-direct-parent contains-link-same-file">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-same-file" href="#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-113"><span class="toc_what">Section</span> <span class="toc_number">1.1</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt install</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-same-file" href="#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-1"><span class="toc_what">Section</span> <span class="toc_number">1.1</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt install</code></span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside link-same-file-direct-parent contains-link-same-file">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-same-file" href="#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-114"><span class="toc_what">Section</span> <span class="toc_number">1.2</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt update</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-same-file" href="#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-2"><span class="toc_what">Section</span> <span class="toc_number">1.2</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt update</code></span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside link-same-file-direct-parent contains-link-same-file">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-same-file" href="#sub:apt-key"><span class="toc_what">Section</span> <span class="toc_number">1.3</span><span class="toc_sep"> - </span><span class="toc_name"><code>apt-key</code></span></a>
@@ -5042,13 +5071,16 @@ p {
 <li class="toc_li-depth-1 toc_li_for_part">
 <a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="fall2017_git.html#sec:fall2017-git"><span class="toc_what">Unit</span> <span class="toc_number">L-6</span><span class="toc_sep"> - </span><span class="toc_name">Git usage guide for Fall 2017</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-7f172-72"><span class="toc_what">Section</span> <span class="toc_number">6.1</span><span class="toc_sep"> - </span><span class="toc_name">Repositories</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-cfb34-1"><span class="toc_what">Section</span> <span class="toc_number">6.1</span><span class="toc_sep"> - </span><span class="toc_name">Differences</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-homeworks"><span class="toc_what">Section</span> <span class="toc_number">6.2</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for  homeworks</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:fall2017-git-repository"><span class="toc_what">Section</span> <span class="toc_number">6.2</span><span class="toc_sep"> - </span><span class="toc_name">Repositories</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-projects"><span class="toc_what">Section</span> <span class="toc_number">6.3</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for project development</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-homeworks"><span class="toc_what">Section</span> <span class="toc_number">6.3</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for  homeworks</span></a>
+</li>
+<li class="toc_li-depth-3 toc_li_for_sec">
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="fall2017_git.html#sub:git-policy-projects"><span class="toc_what">Section</span> <span class="toc_number">6.4</span><span class="toc_sep"> - </span><span class="toc_name">Git policy for project development</span></a>
 </li>
 </ul>
 </li>
@@ -5909,11 +5941,11 @@ p {
 </li>
 </ul>
 </li>
-</ul></div><div id="not-toc"><div class="super" id="sec:apt"><section class="with-header-inside main-section-for-page" id="apt:section" level="sec" next="linux-general:section" prev="before-you-start:section" status="draft"><div class="navigation"><a class="link_prev link-different-file" href="before_you_start.html#before-you-start:section">prev</a><a class="link_next link-different-file" href="linux_general.html#linux-general:section">next</a><div style="clear:both"></div></div><h1 counter-part="9" counter-sec="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="sec:apt" label-name="Ubuntu packaging with APT" label-number="I-1" label-self="" label-what="Unit" label-what-number="Unit I-1" label-what-number-name="Unit I-1 - Ubuntu packaging with APT" status="draft">Ubuntu packaging with APT</h1><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/apt" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-113:section" level="sub" status="unknown"><h2 counter-sec="1" counter-sub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-113" label-name="&lt;code&gt;apt install&lt;/code&gt;" label-number="1.1" label-self="" label-what="Section" label-what-number="Section 1.1" label-what-number-name="Section 1.1 - &lt;code&gt;apt install&lt;/code&gt;" status="unknown"><code>apt install</code></h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a></span><section class="without-header-inside" level="subsub">
+</ul></div><div id="not-toc"><div class="super" id="sec:apt"><section class="with-header-inside main-section-for-page" id="apt:section" level="sec" next="linux-general:section" prev="before-you-start:section" status="draft"><div class="navigation"><a class="link_prev link-different-file" href="before_you_start.html#before-you-start:section">prev</a><a class="link_next link-different-file" href="linux_general.html#linux-general:section">next</a><div style="clear:both"></div></div><h1 counter-part="9" counter-sec="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="sec:apt" label-name="Ubuntu packaging with APT" label-number="I-1" label-self="" label-what="Unit" label-what-number="Unit I-1" label-what-number-name="Unit I-1 - Ubuntu packaging with APT" status="draft">Ubuntu packaging with APT</h1><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/apt" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-1:section" level="sub" status="unknown"><h2 counter-sec="1" counter-sub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-1" label-name="&lt;code&gt;apt install&lt;/code&gt;" label-number="1.1" label-self="" label-what="Section" label-what-number="Section 1.1" label-what-number-name="Section 1.1 - &lt;code&gt;apt install&lt;/code&gt;" status="unknown"><code>apt install</code></h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a></span><section class="without-header-inside" level="subsub">
 <div class="todo-wrap"><p class="todo">to write</p></div>
-</section></section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-114:section" level="sub" status="unknown"><h2 counter-sec="1" counter-sub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-114" label-name="&lt;code&gt;apt update&lt;/code&gt;" label-number="1.2" label-self="" label-what="Section" label-what-number="Section 1.2" label-what-number-name="Section 1.2 - &lt;code&gt;apt update&lt;/code&gt;" status="unknown"><code>apt update</code></h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a></span><section class="without-header-inside" level="subsub">
+</section></section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-2:section" level="sub" status="unknown"><h2 counter-sec="1" counter-sub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-2" label-name="&lt;code&gt;apt update&lt;/code&gt;" label-number="1.2" label-self="" label-what="Section" label-what-number="Section 1.2" label-what-number-name="Section 1.2 - &lt;code&gt;apt update&lt;/code&gt;" status="unknown"><code>apt update</code></h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a></span><section class="without-header-inside" level="subsub">
 <div class="todo-wrap"><p class="todo">to write</p></div>
-</section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-115:section" level="subsub" status="unknown"><h3 counter-sec="1" counter-sub="2" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="subsub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-041c9-115" label-name="&lt;code&gt;apt dist-upgrade&lt;/code&gt;" label-number="1.2.1" label-self="1) " label-what="Subsection" label-what-number="Subsection 1.2.1" label-what-number-name="Subsection 1.2.1 - &lt;code&gt;apt dist-upgrade&lt;/code&gt;" status="unknown"><code>apt dist-upgrade</code></h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a></span>
+</section><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-3:section" level="subsub" status="unknown"><h3 counter-sec="1" counter-sub="2" counter-subsub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="subsub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c507b-3" label-name="&lt;code&gt;apt dist-upgrade&lt;/code&gt;" label-number="1.2.1" label-self="1) " label-what="Subsection" label-what-number="Subsection 1.2.1" label-what-number-name="Subsection 1.2.1 - &lt;code&gt;apt dist-upgrade&lt;/code&gt;" status="unknown"><code>apt dist-upgrade</code></h3><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a></span>
 <div class="todo-wrap"><p class="todo">hold back packages</p></div>
 <!--Warning: Adding prefix 'sub' to current id 'apt-key' for h2.--></section></section><section class="with-header-inside" id="apt-key:section" level="sub" status="unknown"><h2 counter-sec="1" counter-sub="3" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" id="sub:apt-key" label-name="&lt;code&gt;apt-key&lt;/code&gt;" label-number="1.3" label-self="" label-what="Section" label-what-number="Section 1.3" label-what-number-name="Section 1.3 - &lt;code&gt;apt-key&lt;/code&gt;" status="unknown"><code>apt-key</code></h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/15_apt.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/apt-key" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
 <div class="todo-wrap"><p class="todo">to write</p></div>
