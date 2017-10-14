@@ -1,0 +1,1 @@
+           mcdp|note_errors_inline.py:39   - <module>       | [32m[32mNo errors found.[0m[0m
