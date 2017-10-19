@@ -4619,6 +4619,9 @@ p {
 <li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside link-same-file-direct-parent contains-link-same-file">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-same-file" href="#sub:install-atom"><span class="toc_what">Section</span> <span class="toc_number">23.1</span><span class="toc_sep"> - </span><span class="toc_name">Install Atom</span></a>
 </li>
+<li class="toc_li-depth-3 toc_li_for_sec link-same-file-inside link-same-file-direct-parent contains-link-same-file">
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-same-file" href="#sub:remote-coding"><span class="toc_what">Section</span> <span class="toc_number">23.2</span><span class="toc_sep"> - </span><span class="toc_name">Using Atom to code remotely</span></a>
+</li>
 </ul>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
@@ -6083,5 +6086,25 @@ p {
 <pre class="console"><code><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="every_day_linux.html#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="apt.html#sub:add-apt-repository"><span class="add-apt-repository program">add-apt-repository</span></a><span class="space"> </span>ppa:webupd8team/atom
 <span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="every_day_linux.html#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="apt.html#sec:apt"><span class="apt program">apt</span></a><span class="space"> </span>update
 <span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="every_day_linux.html#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="apt.html#sec:apt"><span class="apt program">apt</span></a><span class="space"> </span>install<span class="space"> </span>atom
-</code></pre><div style="display:none">Because of mathjax bug</div>
+</code></pre>
+<!--Warning: Adding prefix 'sub' to current id 'remote-coding' for h2.--></section></section><section class="with-header-inside" id="remote-coding:section" level="sub" status="unknown"><h2 counter-sec="23" counter-sub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/31_atom.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/31_atom.md" id="sub:remote-coding" label-name="Using Atom to code remotely" label-number="23.2" label-self="" label-what="Section" label-what-number="Section 23.2" label-what-number-name="Section 23.2 - Using Atom to code remotely" status="unknown">Using Atom to code remotely</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/31_atom.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/remote-coding" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
+<p>With Atom, you are able to remotely code on files located on your Duckiebot with a GUI. The benefit of using Atom is that you are able to install extensions such as an IDE for Python, a Markdown previewer, or just use custom themes to avoid coding in the terminal.</p>
+<p>Follow these instructions:</p>
+<p>Install remote-atom</p>
+<pre class="console on-laptop"><code><span class="hostname">laptop</span><span class="space"> </span><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="every_day_linux.html#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span>apm<span class="space"> </span>install<span class="space"> </span>remote-atom
+</code></pre>
+<p>Now, we need to edit our SSH config so that any data send to the port 52698, which is the port remote-atom is using, is forwarded via SSH to our local machine. Edit the file “~/.ssh/config”. There, you add “RemoteForward 52698 127.0.0.1:52698” to your host. The resulting host will look similar to</p>
+<pre><code>Host lex
+    User julien
+    Hostname lex.local
+    RemoteForward 52698 127.0.0.1:52698
+</code></pre>
+<p>Now, we need to connect to our duckiebot via SSH and install rmate (and simultaniously rename it to ratom)</p>
+<pre class="console on-duckiebot"><code><span class="hostname">duckiebot</span><span class="space"> </span><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="every_day_linux.html#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="download_utils.html#sub:wget"><span class="wget program">wget</span></a><span class="space"> </span><span class="program_option">-O</span><span class="space"> </span>/usr/local/bin/ratom<span class="space"> </span>https://raw.github.com/aurora/rmate/master/rmate
+</code></pre>
+<p>Now, you just need to launch Atom on your local machine, go to Packages-&gt;Remote Atom-&gt;Start Server.</p>
+<p>You can now edit a file in a terminal connected to your duckiebot via SSH by typing</p>
+<pre class="console on-duckiebot"><code><span class="hostname">duckiebot</span><span class="space"> </span><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent link-different-file" href="every_day_linux.html#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span>ratom<span class="space"> </span>filename
+</code></pre>
+<p>And atom will automatically open the file on your local machine. In the settings of remote-atom, you can also set the package to start the server automatically on launching atom on your local machine.</p><div style="display:none">Because of mathjax bug</div>
 <!--Warning: Adding prefix 'sec' to current id 'liclipse' for h1.--></section></section><div class="navigation"><a class="link_prev link-different-file" href="vim.html#vim:section">prev</a><a class="link_next link-different-file" href="liclipse.html#liclipse:section">next</a><div style="clear:both"></div></div></section></div></div></body></html>
