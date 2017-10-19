@@ -4654,6 +4654,9 @@ p {
 <li class="toc_li-depth-3 toc_li_for_sec">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub" href="#sub:install-atom"><span class="toc_what">Section</span> <span class="toc_number">23.1</span><span class="toc_sep"> - </span><span class="toc_name">Install Atom</span></a>
 </li>
+<li class="toc_li-depth-3 toc_li_for_sec">
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub" href="#sub:remote-coding"><span class="toc_what">Section</span> <span class="toc_number">23.2</span><span class="toc_sep"> - </span><span class="toc_name">Using Atom to code remotely</span></a>
+</li>
 </ul>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
@@ -15691,7 +15694,27 @@ autocmd FileType python set complete isk+=.,(
 <pre class="console"><code><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:add-apt-repository"><span class="add-apt-repository program">add-apt-repository</span></a><span class="space"> </span>ppa:webupd8team/atom
 <span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent" href="#sec:apt"><span class="apt program">apt</span></a><span class="space"> </span>update
 <span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent" href="#sec:apt"><span class="apt program">apt</span></a><span class="space"> </span>install<span class="space"> </span>atom
-</code></pre><div style="display:none">Because of mathjax bug</div>
+</code></pre>
+<!--Warning: Adding prefix 'sub' to current id 'remote-coding' for h2.--></section></section><section class="with-header-inside" id="remote-coding:section" level="sub" status="unknown"><h2 counter-sec="23" counter-sub="2" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/31_atom.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/31_atom.md" id="sub:remote-coding" label-name="Using Atom to code remotely" label-number="23.2" label-self="" label-what="Section" label-what-number="Section 23.2" label-what-number-name="Section 23.2 - Using Atom to code remotely" status="unknown">Using Atom to code remotely</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/31_atom.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/remote-coding" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="without-header-inside" level="subsub">
+<p>With Atom, you are able to remotely code on files located on your Duckiebot with a GUI. The benefit of using Atom is that you are able to install extensions such as an IDE for Python, a Markdown previewer, or just use custom themes to avoid coding in the terminal.</p>
+<p>Follow these instructions:</p>
+<p>Install remote-atom</p>
+<pre class="console on-laptop"><code><span class="hostname">laptop</span><span class="space"> </span><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span>apm<span class="space"> </span>install<span class="space"> </span>remote-atom
+</code></pre>
+<p>Now, we need to edit our SSH config so that any data send to the port 52698, which is the port remote-atom is using, is forwarded via SSH to our local machine. Edit the file “~/.ssh/config”. There, you add “RemoteForward 52698 127.0.0.1:52698” to your host. The resulting host will look similar to</p>
+<pre><code>Host lex
+    User julien
+    Hostname lex.local
+    RemoteForward 52698 127.0.0.1:52698
+</code></pre>
+<p>Now, we need to connect to our duckiebot via SSH and install rmate (and simultaniously rename it to ratom)</p>
+<pre class="console on-duckiebot"><code><span class="hostname">duckiebot</span><span class="space"> </span><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:wget"><span class="wget program">wget</span></a><span class="space"> </span><span class="program_option">-O</span><span class="space"> </span>/usr/local/bin/ratom<span class="space"> </span>https://raw.github.com/aurora/rmate/master/rmate
+</code></pre>
+<p>Now, you just need to launch Atom on your local machine, go to Packages-&gt;Remote Atom-&gt;Start Server.</p>
+<p>You can now edit a file in a terminal connected to your duckiebot via SSH by typing</p>
+<pre class="console on-duckiebot"><code><span class="hostname">duckiebot</span><span class="space"> </span><span class="console_sign">$</span><span class="space"> </span><a class="ignore-if-not-existent" href="#sub:sudo"><span class="sudo program">sudo</span></a><span class="space"> </span>ratom<span class="space"> </span>filename
+</code></pre>
+<p>And atom will automatically open the file on your local machine. In the settings of remote-atom, you can also set the package to start the server automatically on launching atom on your local machine.</p><div style="display:none">Because of mathjax bug</div>
 <!--Warning: Adding prefix 'sec' to current id 'liclipse' for h1.--></section></section></section><section class="with-header-inside" id="liclipse:section" level="sec" status="ready"><h1 counter-part="9" counter-sec="24" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/32_eclipse.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/32_eclipse.md" id="sec:liclipse" label-name="Liclipse" label-number="I-24" label-self="" label-what="Unit" label-what-number="Unit I-24" label-what-number-name="Unit I-24 - Liclipse" status="ready">Liclipse</h1><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/32_eclipse.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dth/liclipse" title="Use this link as the permanent link to share with people.">🔗</a></span><section class="with-header-inside" id="autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-f68ad-143:section" level="sub" status="unknown"><h2 counter-sec="24" counter-sub="1" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_60_software_reference/12_software_carpentry/32_eclipse.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/32_eclipse.md" id="sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-f68ad-143" label-name="Why using IDEs" label-number="24.1" label-self="" label-what="Section" label-what-number="Section 24.1" label-what-number-name="Section 24.1 - Why using IDEs" status="unknown">Why using IDEs</h2><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_60_software_reference/12_software_carpentry/32_eclipse.md" title="Click this link to directly edit on the repository.">✎</a></span><section class="without-header-inside" level="subsub">
 <p>To be productive in coding, you need to have a proper IDE.</p>
 <p>Look at how quickly you can create Python files by using an IDE (<a href="#fig:eclipse-capability"><span class="reflabel">Figure 24.1</span></a>).
@@ -21449,6 +21472,7 @@ sudo apt-get install -y ffmpeg gstreamer0.10-ffmpeg
 </div>
 </section></section><section class="with-header-inside" id="last-modified:section" level="sec"><h1 counter-part="21" counter-sec="7" id="sec:last-modified" label-name="Last modified" label-number="U-7" label-self="" label-what="Unit" label-what-number="Unit U-7" label-what-number-name="Unit U-7 - Last modified">Last modified</h1><section class="without-header-inside" level="sub">
 <ul>
+<li>Wed, Oct 18: <a class="number_name" href="#sec:atom"><span class="reflabel">Unit I-23 - Atom</span></a> (Julien Kindle)</li>
 <li>Wed, Oct 18: <a class="number_name" href="#sec:schedule_TTIC"><span class="reflabel">Unit L-13 - Chicago branch diary</span></a> (Matthew Walter)</li>
 <li>Wed, Oct 18: <a class="number_name" href="#sec:jupyter"><span class="reflabel">Unit J-8 - Jupyter</span></a> (Andrea Censi)</li>
 <li>Tue, Oct 17: <a class="number_name" href="#sec:rc-control"><span class="reflabel">Unit C-11 - Software setup and RC remote control</span></a> (kaufmannPolyMtl)</li>
@@ -21548,7 +21572,6 @@ sudo apt-get install -y ffmpeg gstreamer0.10-ffmpeg
 <li>Sat, Sep 23: <a class="number_name" href="#sec:guide-for-mentors"><span class="reflabel">Unit L-23 - Guide for mentors</span></a> (Andrea Censi)</li>
 <li>Sat, Sep 23: <a class="number_name" href="#sec:introduction_to_ros"><span class="reflabel">Unit I-30 - ROS installation and reference</span></a> (Andrea F. Daniele)</li>
 <li>Sat, Sep 23: <a class="number_name" href="#sec:time-series"><span class="reflabel">Unit F-21 - Time series</span></a> (Andrea Censi)</li>
-<li>Sat, Sep 23: <a class="number_name" href="#sec:computer-science-concepts"><span class="reflabel">Unit F-24 - Computer science concepts</span></a> (Andrea Censi)</li>
 </ul></section></section></section>
 <style>
 .footnote-simulation {
