@@ -2,14 +2,6 @@
            mcdp|note_errors_inline.py:36   - <module>       | [31m[31mFound a few errors:[0m[0m
            mcdp|note_errors_inline.py:37   - <module>       | [31m[31m
 
-* Ref. error
-  
-  More than one element matching '#sub:Zurich-2017-10-18'.
-
-* Ref. error
-  
-  More than one element matching '#sub:Zurich-2017-10-18'.
-
 * Resource error
   
   Cannot open URL
@@ -32,10 +24,6 @@
 
 * Resource error
   
-  embed_img_data: Could not find file troubleshooting-images/joystick_no_connection.jpg
-
-* Resource error
-  
   Cannot open URL
   | Traceback (most recent call last):
   |   File "/home/duckietown/scm/duckuments/mcdp/src/mcdp_docs/videos.py", line 110, in get_vimeo_info
@@ -52,20 +40,4 @@
   |     result = func(*args)
   |   File "/usr/lib/python2.7/urllib2.py", line 556, in http_error_default
   |     raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
-  | HTTPError: HTTP Error 503: Service Unavailable
-
-* Naming
-  
-  More than one element with id 'sub:Zurich-2017-10-18'.
-
-* Naming
-  
-  More than one element with id 'Zurich-2017-10-18:section'.
-
-* Naming
-  
-  More than one element with id 'sub:Zurich-2017-10-18'.
-
-* Naming
-  
-  More than one element with id 'Zurich-2017-10-18:section'.[0m[0m
+  | HTTPError: HTTP Error 503: Service Unavailable[0m[0m
