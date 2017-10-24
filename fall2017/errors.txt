@@ -2,6 +2,30 @@
            mcdp|note_errors_inline.py:36   - <module>       | [31m[31mFound a few errors:[0m[0m
            mcdp|note_errors_inline.py:37   - <module>       | [31m[31m
 
+* Ref. error
+  
+  More than one element matching '#sub:Zurich-2017-10-18'.
+
+* Ref. error
+  
+  More than one element matching '#sub:Zurich-2017-10-18'.
+
 * Resource error
   
-  embed_img_data: Could not find file troubleshooting-images/joystick_no_connection.jpg[0m[0m
+  embed_img_data: Could not find file troubleshooting-images/joystick_no_connection.jpg
+
+* Naming
+  
+  More than one element with id 'sub:Zurich-2017-10-18'.
+
+* Naming
+  
+  More than one element with id 'Zurich-2017-10-18:section'.
+
+* Naming
+  
+  More than one element with id 'sub:Zurich-2017-10-18'.
+
+* Naming
+  
+  More than one element with id 'Zurich-2017-10-18:section'.[0m[0m
