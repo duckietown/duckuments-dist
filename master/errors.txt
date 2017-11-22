@@ -60,4 +60,27 @@
   |     result = func(*args)
   |   File "/usr/lib/python2.7/urllib2.py", line 556, in http_error_default
   |     raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
-  | HTTPError: HTTP Error 503: Service Unavailable[0m[0m
+  | HTTPError: HTTP Error 503: Service Unavailable
+
+* missing status
+  
+  Status not found for this header:
+  
+    <h1>Anti-Instagram: preliminary design document (#devel-anti-instagram)</h1>
+  
+   in file /home/duckietown/scm/duckuments/docs/atoms_85_fall2017_projects/11_first_anti-instagram/preliminary-design-document-anti-instagram.md
+  
+  Please set the status for all the top-level headers.
+  
+  The syntax is:
+  
+        # My section    {#SECTIONID status=STATUS}
+  
+  These are the possible choices for the status:
+  
+             status=draft   This is a draft. Drafts are typically hidden from front-facing versions.
+              status=beta   This is ready for review.
+             status=ready   This is ready to be published.
+         status=to-update   This is out-of-date and needs a refresh.
+        status=deprecated   This part is deprecated and will be eventually deleted.
+  status=recently-updated   This part has been recently updated (<1 week).[0m[0m
