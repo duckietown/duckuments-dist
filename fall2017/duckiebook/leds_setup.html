@@ -2424,9 +2424,107 @@ ul.toc ul:not(.contains-link-same-file) li:not(.link-same-file-inside) {
 
 
 */</style><style type="text/css">/* Duckuments-specific CSS file */
-p {
+
+body{
+    background-color: #F7F7F6;
+    /* ==> Revert changes from auto-generated CSS code */
+    padding-left: 0;
+    width: 100%;
+    /* <== Revert changes from auto-generated CSS code */
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+p{
     margin-top: 1em;
     margin-bottom: 0.5em;
+}
+
+section, p{
+    max-width: 100%;
+}
+
+section[status=beta], section[status=draft], section[status=unknown],
+section[status=to-update], section[status=recently-updated], section[status=deprecated]{
+    padding-right: 1em;
+}
+
+#tocdiv{
+    width: 30em;
+}
+
+#tocdiv ul:first-child{
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: white;
+}
+
+#not-toc{
+    width: 540pt;
+    margin: auto;
+    font-size: 11pt;
+    padding: 20px;
+    margin-top: 1.4em;
+    border: 1px solid gray;
+    border-radius: 6px;
+    background-color: white;
+    transform: none;
+}
+
+#not-toc section ul{
+    text-indent: 11pt;
+}
+
+#not-toc section .video-vimeo-player{
+    width: 100%;
+    height: 18em;
+    margin-top: 1em;
+}
+
+#tocdiv ul li{
+    line-height: 1.5;
+}
+
+#not-toc ul li{
+    line-height: 1.4;
+}
+
+#tocdiv > ul > li > ul{
+    margin-left: 0.2em;
+    padding-left: 0.8em;
+    border-left: 3px solid lightgray;
+}
+
+#tocdiv > ul > li > ul > li > ul{
+    padding-left: 1.2em;
+}
+
+#not-toc .github-etc-links{
+    transform: scale(1.6);
+    outline: none;
+    border-radius: 4px;
+    background-color: #efeaea;
+    margin-right: 1em;
+    padding: 1.1pt 4pt 0.5pt 4pt;
+}
+
+#not-toc .github-etc-links .github-edit-link{
+    font-size: inherit;
+    color: black;
+}
+
+#not-toc .github-etc-links .purl-link{
+    font-size: 6pt;
+    margin: 0;
+    margin-left: 4pt;
+}
+
+#not-toc h4{
+    margin-top: 1.2em;
+}
+
+#not-toc section > div:last-child{
+    margin-top: 4em;
 }
 </style><script type="text/x-mathjax-config">
  MathJax.Hub.Config({
@@ -3706,59 +3804,59 @@ p {
 </ul>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
-<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="duckiebot_configurations.html#sec:acquiring-parts-c0"><span class="toc_what">Unit</span> <span class="toc_number">I-2</span><span class="toc_sep"> - </span><span class="toc_name">Acquiring the parts for the Duckiebot <code>DB17-wjd</code></span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
+<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="duckiebot_configurations.html#sec:acquiring-parts-c0"><span class="toc_what">Unit</span> <span class="toc_number">I-2</span><span class="toc_sep"> - </span><span class="toc_name">Acquiring the parts (<code>DB17-wjd</code>)</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-309"><span class="toc_what">Section</span> <span class="toc_number">2.1</span><span class="toc_sep"> - </span><span class="toc_name">Bill of materials</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-1"><span class="toc_what">Section</span> <span class="toc_number">2.1</span><span class="toc_sep"> - </span><span class="toc_name">Bill of materials</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-310"><span class="toc_what">Section</span> <span class="toc_number">2.2</span><span class="toc_sep"> - </span><span class="toc_name">Chassis</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-2"><span class="toc_what">Section</span> <span class="toc_number">2.2</span><span class="toc_sep"> - </span><span class="toc_name">Chassis</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-311"><span class="toc_what">Section</span> <span class="toc_number">2.3</span><span class="toc_sep"> - </span><span class="toc_name">Raspberry Pi 3 - Model B</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-3"><span class="toc_what">Section</span> <span class="toc_number">2.3</span><span class="toc_sep"> - </span><span class="toc_name">Raspberry Pi 3 - Model B</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-316"><span class="toc_what">Section</span> <span class="toc_number">2.4</span><span class="toc_sep"> - </span><span class="toc_name">Camera</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-8"><span class="toc_what">Section</span> <span class="toc_number">2.4</span><span class="toc_sep"> - </span><span class="toc_name">Camera</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-319"><span class="toc_what">Section</span> <span class="toc_number">2.5</span><span class="toc_sep"> - </span><span class="toc_name">DC Motor HAT</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-11"><span class="toc_what">Section</span> <span class="toc_number">2.5</span><span class="toc_sep"> - </span><span class="toc_name">DC Motor HAT</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-321"><span class="toc_what">Section</span> <span class="toc_number">2.6</span><span class="toc_sep"> - </span><span class="toc_name">Battery</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-13"><span class="toc_what">Section</span> <span class="toc_number">2.6</span><span class="toc_sep"> - </span><span class="toc_name">Battery</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-322"><span class="toc_what">Section</span> <span class="toc_number">2.7</span><span class="toc_sep"> - </span><span class="toc_name">Standoffs, Nuts and Screws</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-14"><span class="toc_what">Section</span> <span class="toc_number">2.7</span><span class="toc_sep"> - </span><span class="toc_name">Standoffs, Nuts and Screws</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-323"><span class="toc_what">Section</span> <span class="toc_number">2.8</span><span class="toc_sep"> - </span><span class="toc_name">Zip Tie</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-15"><span class="toc_what">Section</span> <span class="toc_number">2.8</span><span class="toc_sep"> - </span><span class="toc_name">Zip Tie</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-324"><span class="toc_what">Section</span> <span class="toc_number">2.9</span><span class="toc_sep"> - </span><span class="toc_name">Configuration <code>DB17-w</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-16"><span class="toc_what">Section</span> <span class="toc_number">2.9</span><span class="toc_sep"> - </span><span class="toc_name">Configuration <code>DB17-w</code></span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-326"><span class="toc_what">Section</span> <span class="toc_number">2.10</span><span class="toc_sep"> - </span><span class="toc_name">Configuration <code>DB17-j</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-18"><span class="toc_what">Section</span> <span class="toc_number">2.10</span><span class="toc_sep"> - </span><span class="toc_name">Configuration <code>DB17-j</code></span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-204f2-328"><span class="toc_what">Section</span> <span class="toc_number">2.11</span><span class="toc_sep"> - </span><span class="toc_name">Configuration <code>DB17-d</code></span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="duckiebot_configurations.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-c0400-20"><span class="toc_what">Section</span> <span class="toc_number">2.11</span><span class="toc_sep"> - </span><span class="toc_name">Configuration <code>DB17-d</code></span></a>
 </li>
 </ul>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
-<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="power_cable_prep_c0.html#sec:power-cable-prep-c0"><span class="toc_what">Unit</span> <span class="toc_number">I-3</span><span class="toc_sep"> - </span><span class="toc_name">Preparing the power cable for <code>DB17</code></span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
+<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="power_cable_prep_c0.html#sec:power-cable-prep-c0"><span class="toc_what">Unit</span> <span class="toc_number">I-3</span><span class="toc_sep"> - </span><span class="toc_name">Preparing the power cable (<code>DB17</code>)</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="power_cable_prep_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-dc87e-135"><span class="toc_what">Section</span> <span class="toc_number">3.1</span><span class="toc_sep"> - </span><span class="toc_name">Video tutorial</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="power_cable_prep_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-d52e1-1"><span class="toc_what">Section</span> <span class="toc_number">3.1</span><span class="toc_sep"> - </span><span class="toc_name">Video tutorial</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="power_cable_prep_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-dc87e-136"><span class="toc_what">Section</span> <span class="toc_number">3.2</span><span class="toc_sep"> - </span><span class="toc_name">Step-by-step guide</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="power_cable_prep_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-d52e1-2"><span class="toc_what">Section</span> <span class="toc_number">3.2</span><span class="toc_sep"> - </span><span class="toc_name">Step-by-step guide</span></a>
 </li>
 </ul>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
-<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="assembling_duckiebot_c0.html#sec:assembling-duckiebot-c0"><span class="toc_what">Unit</span> <span class="toc_number">I-4</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Duckiebot <code>DB17</code>, <code>DB17-jwd</code></span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
+<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="assembling_duckiebot_c0.html#sec:assembling-duckiebot-c0"><span class="toc_what">Unit</span> <span class="toc_number">I-4</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Duckiebot (<code>DB17-jwd</code>)</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="assembling_duckiebot_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-9844a-1"><span class="toc_what">Section</span> <span class="toc_number">4.1</span><span class="toc_sep"> - </span><span class="toc_name">Chassis</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="assembling_duckiebot_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-8f67d-1"><span class="toc_what">Section</span> <span class="toc_number">4.1</span><span class="toc_sep"> - </span><span class="toc_name">Chassis</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="assembling_duckiebot_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-9844a-9"><span class="toc_what">Section</span> <span class="toc_number">4.2</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Raspberry Pi, camera, and HATs</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="assembling_duckiebot_c0.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-8f67d-9"><span class="toc_what">Section</span> <span class="toc_number">4.2</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Raspberry Pi, camera, and HATs</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="assembling_duckiebot_c0.html#sub:op-assembly-db17jwd-faq"><span class="toc_what">Section</span> <span class="toc_number">4.3</span><span class="toc_sep"> - </span><span class="toc_name">FAQ</span></a>
@@ -3766,7 +3864,7 @@ p {
 </ul>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
-<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="assembling_duckiebot_db17_ttic.html#sec:assembling-duckiebot-db17-ttic"><span class="toc_what">Unit</span> <span class="toc_number">I-5</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Duckiebot <code>DB17-wjd</code> (TTIC)</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
+<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="assembling_duckiebot_db17_ttic.html#sec:assembling-duckiebot-db17-ttic"><span class="toc_what">Unit</span> <span class="toc_number">I-5</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Duckiebot (<code>DB17-wjd</code> at TTIC)</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
 <a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="assembling_duckiebot_db17_ttic.html#sub:howto-mount-motors"><span class="toc_what">Section</span> <span class="toc_number">5.1</span><span class="toc_sep"> - </span><span class="toc_name">Motors</span></a>
 </li>
@@ -4041,31 +4139,31 @@ p {
 </ul>
 </li>
 <li class="toc_li-depth-0 toc_li_for_unknown contains-link-same-file">
-<a class="toc_link toc_link-depth-1 number_name toc_a_for_part link-different-file" href="building_duckiebot_c1.html#part:building-duckiebot-c1"><span class="toc_what">Part</span> <span class="toc_number">J</span><span class="toc_sep"> - </span><span class="toc_name">Operation manual - <code>DB17-lc</code> Duckiebot configurations</span></a><ul class="toc_ul-depth-1 toc_ul_for_part contains-link-same-file">
+<a class="toc_link toc_link-depth-1 number_name toc_a_for_part link-different-file" href="building_duckiebot_c1.html#part:building-duckiebot-c1"><span class="toc_what">Part</span> <span class="toc_number">J</span><span class="toc_sep"> - </span><span class="toc_name">Duckiebot - <code>DB17-lc</code> configurations</span></a><ul class="toc_ul-depth-1 toc_ul_for_part contains-link-same-file">
 <li class="toc_li-depth-1 toc_li_for_part">
-<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="building_duckiebot_c1.html#sec:acquiring-parts-c1"><span class="toc_what">Unit</span> <span class="toc_number">J-1</span><span class="toc_sep"> - </span><span class="toc_name">Acquiring the parts for the Duckiebot <code>DB17-lc</code></span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
+<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="building_duckiebot_c1.html#sec:acquiring-parts-c1"><span class="toc_what">Unit</span> <span class="toc_number">J-1</span><span class="toc_sep"> - </span><span class="toc_name">Acquiring the parts (<code>DB17-lc</code>)</span></a><ul class="toc_ul-depth-3 toc_ul_for_sec">
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-fd8a2-92"><span class="toc_what">Section</span> <span class="toc_number">1.1</span><span class="toc_sep"> - </span><span class="toc_name">Bill of materials</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-38db9-8"><span class="toc_what">Section</span> <span class="toc_number">1.1</span><span class="toc_sep"> - </span><span class="toc_name">Bill of materials</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-fd8a2-93"><span class="toc_what">Section</span> <span class="toc_number">1.2</span><span class="toc_sep"> - </span><span class="toc_name">LEDs</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-38db9-9"><span class="toc_what">Section</span> <span class="toc_number">1.2</span><span class="toc_sep"> - </span><span class="toc_name">LEDs</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-fd8a2-99"><span class="toc_what">Section</span> <span class="toc_number">1.3</span><span class="toc_sep"> - </span><span class="toc_name">Bumpers</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-38db9-15"><span class="toc_what">Section</span> <span class="toc_number">1.3</span><span class="toc_sep"> - </span><span class="toc_name">Bumpers</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-fd8a2-100"><span class="toc_what">Section</span> <span class="toc_number">1.4</span><span class="toc_sep"> - </span><span class="toc_name">Headers, resistors and jumper</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-38db9-16"><span class="toc_what">Section</span> <span class="toc_number">1.4</span><span class="toc_sep"> - </span><span class="toc_name">Headers, resistors and jumper</span></a>
 </li>
 <li class="toc_li-depth-3 toc_li_for_sec">
-<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-fd8a2-101"><span class="toc_what">Section</span> <span class="toc_number">1.5</span><span class="toc_sep"> - </span><span class="toc_name">Caster (<code>DB17-c</code>)</span></a>
+<a class="toc_link toc_link-depth-4 number_name toc_a_for_sub link-different-file" href="building_duckiebot_c1.html#sub:autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-38db9-17"><span class="toc_what">Section</span> <span class="toc_number">1.5</span><span class="toc_sep"> - </span><span class="toc_name">Caster (<code>DB17-c</code>)</span></a>
 </li>
 </ul>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
-<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="soldering_boards_c1.html#sec:soldering-boards-c1"><span class="toc_what">Unit</span> <span class="toc_number">J-2</span><span class="toc_sep"> - </span><span class="toc_name">Soldering boards for <code>DB17-l</code> [draft]</span></a>
+<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="soldering_boards_c1.html#sec:soldering-boards-c1"><span class="toc_what">Unit</span> <span class="toc_number">J-2</span><span class="toc_sep"> - </span><span class="toc_name">Soldering boards (<code>DB17-l</code>) [draft]</span></a>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
-<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="assembling_duckiebot_c1.html#sec:assembling-duckiebot-c1"><span class="toc_what">Unit</span> <span class="toc_number">J-3</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Duckiebot <code>DB17-wjdlc</code> [draft]</span></a>
+<a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="assembling_duckiebot_c1.html#sec:assembling-duckiebot-c1"><span class="toc_what">Unit</span> <span class="toc_number">J-3</span><span class="toc_sep"> - </span><span class="toc_name">Assembling the Duckiebot (<code>DB17-lc</code>) [draft]</span></a>
 </li>
 <li class="toc_li-depth-1 toc_li_for_part">
 <a class="toc_link toc_link-depth-3 number_name toc_a_for_sec link-different-file" href="bumper_assembly.html#sec:bumper-assembly"><span class="toc_what">Unit</span> <span class="toc_number">J-4</span><span class="toc_sep"> - </span><span class="toc_name">Bumper Assembly [draft]</span></a>
@@ -4359,4 +4457,4 @@ p {
 </li>
 </ul>
 </li>
-</ul></div><div id="not-toc"><div class="super" id="sec:leds-setup"><section class="with-header-inside main-section-for-page" id="leds-setup:section" level="sec" next="part:appendix:section" prev="bumper-assembly:section" status="draft"><div class="navigation"><a class="link_prev link-different-file" href="bumper_assembly.html#bumper-assembly:section">prev</a><a class="link_next link-different-file" href="part_appendix.html#part:appendix:section">next</a><div style="clear:both"></div></div><h1 counter-part="10" counter-sec="5" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_20_setup_and_demo/19_setup_duckiebot_DB17-wjdcl/LED-setup.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_20_setup_and_demo/19_setup_duckiebot_DB17-wjdcl/LED-setup.md" id="sec:leds-setup" label-name="&lt;code&gt;DB17-l&lt;/code&gt; setup [draft]" label-number="J-5" label-self="" label-what="Unit" label-what-number="Unit J-5" label-what-number-name="Unit J-5 - &lt;code&gt;DB17-l&lt;/code&gt; setup [draft]" status="draft"><code>DB17-l</code> setup [draft]</h1><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_20_setup_and_demo/19_setup_duckiebot_DB17-wjdcl/LED-setup.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dt/fall2017/leds-setup" title="Use this link as the permanent link to share with people.">🔗</a></span><p>This section has been removed because it is in status 'draft'. <a href="http://purl.org/dt/master/leds-setup">If you are feeling adventurous, you can read it on master.</a></p><p>To disable this behavior, and completely hide the sections, set the parameter show_removed to false in fall2017.version.yaml.</p><div class="navigation"><a class="link_prev link-different-file" href="bumper_assembly.html#bumper-assembly:section">prev</a><a class="link_next link-different-file" href="part_appendix.html#part:appendix:section">next</a><div style="clear:both"></div></div></section></div></div></body></html>
+</ul></div><div id="not-toc"><div class="super" id="sec:leds-setup"><section class="with-header-inside main-section-for-page" id="leds-setup:section" level="sec" next="part:appendix:section" prev="bumper-assembly:section" status="draft"><div class="navigation"><a class="link_prev link-different-file" href="bumper_assembly.html#bumper-assembly:section">prev</a><a class="link_next link-different-file" href="part_appendix.html#part:appendix:section">next</a><div style="clear:both"></div></div><h1 counter-part="10" counter-sec="5" github-blob-url="https://github.com/duckietown/duckuments/blob/master/docs/atoms_20_setup_and_demo/19_setup_duckiebot_DB17-wjdcl/24_LED_setup.md" github-edit-url="https://github.com/duckietown/duckuments/edit/master/docs/atoms_20_setup_and_demo/19_setup_duckiebot_DB17-wjdcl/24_LED_setup.md" id="sec:leds-setup" label-name="&lt;code&gt;DB17-l&lt;/code&gt; setup [draft]" label-number="J-5" label-self="" label-what="Unit" label-what-number="Unit J-5" label-what-number-name="Unit J-5 - &lt;code&gt;DB17-l&lt;/code&gt; setup [draft]" status="draft"><code>DB17-l</code> setup [draft]</h1><span class="github-etc-links"><a class="github-edit-link" href="https://github.com/duckietown/duckuments/edit/master/docs/atoms_20_setup_and_demo/19_setup_duckiebot_DB17-wjdcl/24_LED_setup.md" title="Click this link to directly edit on the repository.">✎</a><a class="purl-link" href="http://purl.org/dt/fall2017/leds-setup" title="Use this link as the permanent link to share with people.">🔗</a></span><p>This section has been removed because it is in status 'draft'. <a href="http://purl.org/dt/master/leds-setup">If you are feeling adventurous, you can read it on master.</a></p><p>To disable this behavior, and completely hide the sections, set the parameter show_removed to false in fall2017.version.yaml.</p><div class="navigation"><a class="link_prev link-different-file" href="bumper_assembly.html#bumper-assembly:section">prev</a><a class="link_next link-different-file" href="part_appendix.html#part:appendix:section">next</a><div style="clear:both"></div></div></section></div></div></body></html>
