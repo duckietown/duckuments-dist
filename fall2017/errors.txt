@@ -6,7 +6,7 @@
   
   Cannot open URL
   
-     http://vimeo.com/api/v2/video/236334469.json
+     http://vimeo.com/api/v2/video/152825632.json
   | Traceback (most recent call last):
   |   File "/home/duckietown/scm/duckuments/mcdp/src/mcdp_docs/videos.py", line 110, in get_vimeo_info
   |     response = urllib2.urlopen(url)
@@ -28,7 +28,7 @@
   
   Cannot open URL
   
-     http://vimeo.com/api/v2/video/236334482.json
+     http://vimeo.com/api/v2/video/236334493.json
   | Traceback (most recent call last):
   |   File "/home/duckietown/scm/duckuments/mcdp/src/mcdp_docs/videos.py", line 110, in get_vimeo_info
   |     response = urllib2.urlopen(url)
