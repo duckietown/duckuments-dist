@@ -1,2 +1,26 @@
 /home/duckietown/scm/duckuments/deploy/local/lib/python2.7/site-packages/ruamel.ordereddict-0.4.9-py2.7-linux-x86_64.egg/_ordereddict.py:3: UserWarning: Module _ruamel_yaml was already imported from None, but /home/duckietown/scm/duckuments/deploy/lib/python2.7/site-packages/ruamel.yaml-0.15.16-py2.7-linux-x86_64.egg is being added to sys.path
-           mcdp|note_errors_inline.py:39   - <module>       | [32m[32mNo errors found.[0m[0m
+           mcdp|note_errors_inline.py:36   - <module>       | [31m[31mFound a few errors:[0m[0m
+           mcdp|note_errors_inline.py:37   - <module>       | [31m[31m
+
+* syntax error
+  
+  This link text is empty:
+  
+      <a href="http://book.duckietown.org/master/duckiebook/template_int_report.html#sec:template-int-report"></a>
+  
+  Note that the syntax for links in Markdown is
+  
+      [link text](URL)
+  
+  For the internal links (where URL starts with "#"), then the documentation
+  system can fill in the title automatically, leading to the format:
+  
+      [](#other-section)
+  
+  However, this does not work for external sites, such as:
+  
+      [](http://book.duckietown.org/master/duckiebook/template_int_report.html#sec:template-int-report)
+  
+  So, you need to provide some text, such as:
+  
+      [this useful website](http://book.duckietown.org/master/duckiebook/template_int_report.html#sec:template-int-report)[0m[0m
