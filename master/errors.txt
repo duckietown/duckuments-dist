@@ -1,1 +1,0 @@
-/home/duckietown/scm/duckuments/deploy/local/lib/python2.7/site-packages/ruamel.ordereddict-0.4.9-py2.7-linux-x86_64.egg/_ordereddict.py:3: UserWarning: Module _ruamel_yaml was already imported from None, but /home/duckietown/scm/duckuments/deploy/lib/python2.7/site-packages/ruamel.yaml-0.15.16-py2.7-linux-x86_64.egg is being added to sys.path
