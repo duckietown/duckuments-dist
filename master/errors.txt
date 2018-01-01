@@ -2,6 +2,38 @@
            mcdp|note_errors_inline.py:36   - <module>       | [31m[31mFound a few errors:[0m[0m
            mcdp|note_errors_inline.py:37   - <module>       | [31m[31m
 
+* Resource error
+  
+  embed_img_data: Could not find file DT17_tile_straight-texture.png
+
+* Resource error
+  
+  embed_img_data: Could not find file DT17_tile_curve_left-texture.png
+
+* Resource error
+  
+  embed_img_data: Could not find file DT17_tile_curve_right-texture.png
+
+* Resource error
+  
+  embed_img_data: Could not find file DT17_tile_three_way_center-texture.png
+
+* Resource error
+  
+  embed_img_data: Could not find file DT17_tile_four_way_center-texture.png
+
+* Resource error
+  
+  embed_img_data: Could not find file DT17_tile_empty-texture.png
+
+* Resource error
+  
+  embed_img_data: Could not find file DT17_usage_four_way-texture.png
+
+* Resource error
+  
+  embed_img_data: Could not find file DT17_usage_three_way-texture.png
+
 * syntax error
   
   This link is empty:
