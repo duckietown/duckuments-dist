@@ -4,35 +4,25 @@
 
 * Resource error
   
-  embed_img_data: Could not find file DT17_tile_straight-texture.png
-
-* Resource error
+  Cannot open URL
   
-  embed_img_data: Could not find file DT17_tile_curve_left-texture.png
-
-* Resource error
-  
-  embed_img_data: Could not find file DT17_tile_curve_right-texture.png
-
-* Resource error
-  
-  embed_img_data: Could not find file DT17_tile_three_way_center-texture.png
-
-* Resource error
-  
-  embed_img_data: Could not find file DT17_tile_four_way_center-texture.png
-
-* Resource error
-  
-  embed_img_data: Could not find file DT17_tile_empty-texture.png
-
-* Resource error
-  
-  embed_img_data: Could not find file DT17_usage_four_way-texture.png
-
-* Resource error
-  
-  embed_img_data: Could not find file DT17_usage_three_way-texture.png
+     http://vimeo.com/api/v2/video/219731087.json
+  | Traceback (most recent call last):
+  |   File "/home/duckietown/scm/duckuments/mcdp/src/mcdp_docs/videos.py", line 110, in get_vimeo_info
+  |     response = urllib2.urlopen(url)
+  |   File "/usr/lib/python2.7/urllib2.py", line 154, in urlopen
+  |     return opener.open(url, data, timeout)
+  |   File "/usr/lib/python2.7/urllib2.py", line 435, in open
+  |     response = meth(req, response)
+  |   File "/usr/lib/python2.7/urllib2.py", line 548, in http_response
+  |     'http', request, response, code, msg, hdrs)
+  |   File "/usr/lib/python2.7/urllib2.py", line 473, in error
+  |     return self._call_chain(*args)
+  |   File "/usr/lib/python2.7/urllib2.py", line 407, in _call_chain
+  |     result = func(*args)
+  |   File "/usr/lib/python2.7/urllib2.py", line 556, in http_error_default
+  |     raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+  | HTTPError: HTTP Error 503: Service Unavailable
 
 * syntax error
   
