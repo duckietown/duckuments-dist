@@ -6,7 +6,7 @@
   
   Cannot open URL
   
-     http://vimeo.com/api/v2/video/219731087.json
+     http://vimeo.com/api/v2/video/231843373.json
   | Traceback (most recent call last):
   |   File "/home/duckietown/scm/duckuments/mcdp/src/mcdp_docs/videos.py", line 110, in get_vimeo_info
   |     response = urllib2.urlopen(url)
@@ -23,6 +23,14 @@
   |   File "/usr/lib/python2.7/urllib2.py", line 556, in http_error_default
   |     raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
   | HTTPError: HTTP Error 503: Service Unavailable
+
+* Naming
+  
+  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-240:section'.
+
+* Naming
+  
+  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-240:section'.
 
 * syntax error
   
