@@ -1,0 +1,21 @@
+/home/duckietown/scm/duckuments/deploy/local/lib/python2.7/site-packages/ruamel.ordereddict-0.4.9-py2.7-linux-x86_64.egg/_ordereddict.py:3: UserWarning: Module _ruamel_yaml was already imported from None, but /home/duckietown/scm/duckuments/deploy/lib/python2.7/site-packages/ruamel.yaml-0.15.16-py2.7-linux-x86_64.egg is being added to sys.path
+           mcdp|note_errors_inline.py:36   - <module>       | [31m[31mFound a few errors:[0m[0m
+           mcdp|note_errors_inline.py:37   - <module>       | [31m[31m
+
+* syntax error
+  
+  This link is empty:
+  
+      <a class="number_name" href="#booktitle"></a>
+  
+  It might be that the writer intended for this
+  link to point to something, but they got the syntax wrong.
+  
+      href = #booktitle
+  
+  As a reminder, to refer to other parts of the document, use
+  the syntax "#ID", such as:
+  
+      See [](#fig:my-figure).
+  
+      See [](#section-name).[0m[0m
