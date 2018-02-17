@@ -2,22 +2,6 @@
            mcdp|note_errors_inline.py:36   - <module>       | [31m[31mFound a few errors:[0m[0m
            mcdp|note_errors_inline.py:37   - <module>       | [31m[31m
 
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-251:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-252:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-251:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-252:section'.
-
 * syntax error
   
   This link is empty:
