@@ -4,7 +4,30 @@
 
 * Ref. error
   
-  I do not know the link that is indicated by the link '#anit-instagram-final-report'.
+  I do not know the link that is indicated by the link '#anti-instagram-final-report'.
+
+* missing status
+  
+  Status not found for this header:
+  
+    <h1 id="fleet-planning-report-conclusion">4 Conclusion</h1>
+  
+   in file /home/duckietown/scm/duckuments/docs/atoms_85_fall2017_projects/21_fleet_planning/30-fleet-planning-project-report.md
+  
+  Please set the status for all the top-level headers.
+  
+  The syntax is:
+  
+        # My section    {#SECTIONID status=STATUS}
+  
+  These are the possible choices for the status:
+  
+             status=draft   This is a draft. Drafts are typically hidden from front-facing versions.
+              status=beta   This is ready for review.
+             status=ready   This is ready to be published.
+         status=to-update   This is out-of-date and needs a refresh.
+        status=deprecated   This part is deprecated and will be eventually deleted.
+  status=recently-updated   This part has been recently updated (<1 week).
 
 * syntax error
   
