@@ -10,10 +10,6 @@
   
   I do not know the link that is indicated by the link '#navigators-final-opportunity'.
 
-* Ref. error
-  
-  I do not know the link that is indicated by the link '#demofleet-messaging'.
-
 * missing status
   
   Status not found for this header:
@@ -35,4 +31,8 @@
              status=ready   This is ready to be published.
          status=to-update   This is out-of-date and needs a refresh.
         status=deprecated   This part is deprecated and will be eventually deleted.
-  status=recently-updated   This part has been recently updated (<1 week).[0m[0m
+  status=recently-updated   This part has been recently updated (<1 week).
+
+* Ref. error
+  
+  I do not know the link that is indicated by the link '#demofleet-messaging'.[0m[0m
