@@ -4,43 +4,23 @@
 
 * Ref. error
   
-  More than one element matching '#sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
-
-* Ref. error
-  
-  More than one element matching '#sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
-
-* Ref. error
-  
   I do not know the link that is indicated by the link '#anti-instagram-final-report'.
+
+* Ref. error
+  
+  I do not know the link that is indicated by the link '#navigators-final-opportunity'.
 
 * Ref. error
   
   I do not know the link that is indicated by the link '#demofleet-messaging'.
 
-* Naming
-  
-  More than one element with id 'sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
-
-* Naming
-  
-  More than one element with id 'demo-template-run-249-demoInstructions_fleetcommunication-33102ba4:section'.
-
-* Naming
-  
-  More than one element with id 'sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
-
-* Naming
-  
-  More than one element with id 'demo-template-run-249-demoInstructions_fleetcommunication-33102ba4:section'.
-
 * missing status
   
   Status not found for this header:
   
-    <h1 id="fleet-planning-report-conclusion">4 Conclusion</h1>
+    <h1 sec:fleet-planning-report-conclusion="sec:fleet-planning-report-conclusion">Conclusion</h1>
   
-   in file /home/duckietown/scm/duckuments/docs/atoms_85_fall2017_projects/21_fleet_planning/30-fleet-planning-project-report.md
+   in file /home/duckietown/scm/duckuments/docs/atoms_85_fall2017_projects/21_fleet_planning/30-fleet-planning-final-report.md
   
   Please set the status for all the top-level headers.
   
