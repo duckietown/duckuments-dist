@@ -4,7 +4,35 @@
 
 * Ref. error
   
+  More than one element matching '#sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
+
+* Ref. error
+  
+  More than one element matching '#sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
+
+* Ref. error
+  
   I do not know the link that is indicated by the link '#anti-instagram-final-report'.
+
+* Ref. error
+  
+  I do not know the link that is indicated by the link '#demofleet-messaging'.
+
+* Naming
+  
+  More than one element with id 'sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
+
+* Naming
+  
+  More than one element with id 'demo-template-run-249-demoInstructions_fleetcommunication-33102ba4:section'.
+
+* Naming
+  
+  More than one element with id 'sub:demo-template-run-249-demoInstructions_fleetcommunication-33102ba4'.
+
+* Naming
+  
+  More than one element with id 'demo-template-run-249-demoInstructions_fleetcommunication-33102ba4:section'.
 
 * missing status
   
