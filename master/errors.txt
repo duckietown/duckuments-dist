@@ -37,38 +37,6 @@
   
   I do not know the link that is indicated by the link '#demofleet-messaging'.
 
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-152:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-153:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-154:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-155:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-152:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-153:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-154:section'.
-
-* Naming
-  
-  More than one element with id 'autoid-DO-NOT-USE-THIS-VERY-UNSTABLE-LINK-695fe-155:section'.
-
 * syntax error
   
   This link is empty:
